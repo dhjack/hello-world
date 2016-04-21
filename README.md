@@ -27,8 +27,7 @@ slave2
 ...
 slaveN
 ```
-进入 /homed/spark/sbin，启动脚本start-all.sh
-如果无异常，那么在浏览器中访问 master:9090，会有一个监控页面，证明spark启动成功
+进入 /homed/spark/sbin，启动脚本start-all.sh。如果无异常，那么在浏览器中访问 master:9090，会有一个监控页面，证明spark启动成功
 
 
 
