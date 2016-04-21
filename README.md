@@ -1,8 +1,10 @@
 # spark1.6.0-bin-without-hadoop 部署
 1. 在master和每台slave上，解压spark-1.6.0-bin-without-hadoop.tgz到/homed目录下面，并重命名为spark
-    cd /homed
-    tar xf /root/tmp/spark-1.6.0-bin-without-hadoop.tgz
-    mv spark-1.6.0-bin-without-hadoop spark
+```shell
+cd /homed
+tar xf /root/tmp/spark-1.6.0-bin-without-hadoop.tgz
+mv spark-1.6.0-bin-without-hadoop spark
+```
 2. 在master服务器上，进入/homed/spark/conf目录，`cp spark-env.sh.template spark-env.sh`，然后编辑spark-env.sh，添加
 ```shell
 export JAVA_HOME=/usr/java/jdk1.7.0_55
