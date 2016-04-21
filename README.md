@@ -20,11 +20,13 @@ cd /homed
 ./updatefiletoallslave.sh /homed/spark/conf/spark-env.sh
 ./docmdonall.sh "cd /homed/spark/ && mkdir -p /exe/log && mkdir eventLog"
 ```
-4. 在/homed/spark/conf目录下面，创建slaves文件，把各个slave的域名或者ip写入进去，一行一个，如：  
-		slave1  
-		slave2  
-		...  
-		slaveN  
+4. 在/homed/spark/conf目录下面，创建slaves文件，把各个slave的域名或者ip写入进去，一行一个，如：
+```shell
+slave1
+slave2
+...
+slaveN
+```
 5. 进入 /homed/spark/sbin，启动脚本start-all.sh
 6. 如果无异常，那么在浏览器中访问 master:9090，会有一个监控页面，证明spark启动成功
 
